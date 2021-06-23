@@ -12,7 +12,7 @@ def part_two(content):
 
 
 def main():
-    content = getFileContent('day6_input.txt')
+    content = getFileContent('day_input.txt')  # ! Insert correct day.
 
     res1 = part_one(content)
     print(f'Part One: {res1}')
