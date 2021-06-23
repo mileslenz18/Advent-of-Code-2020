@@ -1,6 +1,6 @@
 import re
 
-from helper_functions import getFileContet
+from helper_functions import getFileContent
 
 
 def part_one(passports):
@@ -76,7 +76,7 @@ def part_two(passports):
 
 
 def main():
-    content = getFileContet('day4_input.txt')
+    content = getFileContent('day4_input.txt')
 
     passports = []
 
