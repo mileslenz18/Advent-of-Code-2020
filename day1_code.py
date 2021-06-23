@@ -1,4 +1,4 @@
-from helper_functions import getFileContet
+from helper_functions import getFileContent
 
 
 def part_one(content):
@@ -27,7 +27,7 @@ def part_two(content):
 
 
 def main():
-    content = getFileContet('day1_input.txt')
+    content = getFileContent('day1_input.txt')
     content = [int(num) for num in content]
 
     res1 = part_one(content)

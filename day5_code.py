@@ -1,4 +1,4 @@
-from helper_functions import getFileContet
+from helper_functions import getFileContent
 
 
 def part_one(seatIDs):
@@ -22,7 +22,7 @@ def part_two(seatIDs):
 
 
 def main():
-    content = getFileContet('day5_input.txt')
+    content = getFileContent('day5_input.txt')
 
     seatIDs = []
 
