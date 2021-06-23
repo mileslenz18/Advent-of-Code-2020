@@ -1,4 +1,4 @@
-from helper_functions import getFileContet
+from helper_functions import getFileContent
 
 
 def part_one(content):
@@ -12,7 +12,7 @@ def part_two(content):
 
 
 def main():
-    content = getFileContet('day_input.txt')  # ! Insert correct day
+    content = getFileContent('day6_input.txt')
 
     res1 = part_one(content)
     print(f'Part One: {res1}')
