@@ -76,7 +76,7 @@ def part_two(passports):
 
 
 def main():
-    content = getFileContent('day4_input.txt')
+    content = getFileContent('input.txt')
 
     passports = []
 

@@ -63,7 +63,7 @@ def part_two(content):
 
 
 def main():
-    content = getFileContent('day6_input.txt')
+    content = getFileContent('input.txt')
 
     res1 = part_one(content)
     print(f'Part One: {res1}')

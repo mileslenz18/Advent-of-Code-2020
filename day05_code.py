@@ -22,7 +22,7 @@ def part_two(seatIDs):
 
 
 def main():
-    content = getFileContent('day5_input.txt')
+    content = getFileContent('input.txt')
 
     seatIDs = []
 

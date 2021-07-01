@@ -35,7 +35,7 @@ def part_two(bags):
 
 
 def main():
-    content = getFileContent('day7_input.txt')
+    content = getFileContent('input.txt')
 
     bags = {}
 
