@@ -61,7 +61,43 @@ def part_one(content):
 def part_two(content):
     """Calculate distance between that location and starting position."""
 
-    return None
+    waypoint = [1, 10]
+    ship_pos = [0, 0]
+
+    for instruction in content:
+        op, value = instruction[0], int(instruction[1:])
+
+        if op == "N":
+            waypoint[0] += value
+        elif op == "S":
+            waypoint[0] -= value
+        elif op == "E":
+            waypoint[1] += value
+        elif op == "W":
+            waypoint[1] -= value
+
+        elif op == "L":
+            if value == 90:
+                waypoint = [waypoint[1]] + [-waypoint[0]]
+            elif value == 180:
+                waypoint = [-x for x in waypoint]
+            elif value == 270:
+                waypoint = [-waypoint[1]] + [waypoint[0]]
+        elif op == "R":
+            if value == 90:
+                waypoint = [-waypoint[1]] + [waypoint[0]]
+            elif value == 180:
+                waypoint = [-x for x in waypoint]
+            elif value == 270:
+                waypoint = [waypoint[1]] + [-waypoint[0]]
+
+        elif op == "F":
+            ship_pos[0] += waypoint[0] * value
+            ship_pos[1] += waypoint[1] * value
+
+    result = abs(ship_pos[0]) + abs(ship_pos[1])
+
+    return result
 
 
 def main():
